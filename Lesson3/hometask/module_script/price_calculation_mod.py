@@ -9,7 +9,7 @@ from datetime import datetime
 from src.conf import customers, costs, discounts, prices_path
 
 def calculate_prices():
-
+    print('hello')
     seaborn.set()
 
     # Подгружаем котировки курсы
