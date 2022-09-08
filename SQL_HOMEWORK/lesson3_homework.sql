@@ -78,6 +78,7 @@ select
 from product pr
 where pr."type"  = 'Printer'
 and pr.maker in (select p2.maker from pc p
-					join product p2 on p2.model = p.model and p.speed in (select * from tq))
+					join product p2 on p2.model = p.model and p.speed in (select * from tq)
+				)
 	
 	
