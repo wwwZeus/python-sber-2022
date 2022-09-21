@@ -39,7 +39,7 @@ where  (t.col_1<5)
 
 --pgAdmin у меня не установлен, поэтому читал инструкции к PostgreSQL Shell и писал код 
 --https://www.postgresqltutorial.com/postgresql-tutorial/export-postgresql-table-to-csv-file/
-
+--https://bestprogrammer.ru/baza-dannyh/kak-importirovat-csv-fajl-v-postgresql
 psql -h 52.157.159.24 -U student28 -d sql_ex_for_student0
 create table avocado(id NUMERIC(50), "Date" date, AveragePrice decimal, Total_Volume decimal, "4046" decimal, "4225" decimal, "4770" decimal, Total_Bags decimal, Small_Bags decimal, Large_Bags decimal, XLarge_Bags decimal, "type" varchar(500), "year" NUMERIC(4), "region" varchar(500)
 COPY avocado FROM 'C:\avocado.csv' DELIMETER ',' CSV HEADER;
